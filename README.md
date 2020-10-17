@@ -6,6 +6,18 @@
 
 # 3. Decorator: Dentro del ejercicio el patron decorator es el encargado de agregar un elemento extra a alguno de los jugadores, como implementacion, clonamos uno de los enemigos y adicionamos la clase "ImpostorDecorator" la cual se encarga de darle cualidades para eliminar enemigos mediante la funcion "killPlayer"  
 
+# 4.Creacionales
+Abstract factory, builder, factory method
+Este tipo de patrón se utilizó para la versión del juego gon javascript y phaser que encontramos en el directorio agario
+Se empleó la Construcción de clases, objetos y otras estructuras de datos.
+
+
+Permiten crear diferentes instancias de objetos sin tener que preocuparnos de la forma en la que realmente se crean. Se usan cuando es necesario crear varios objetos y hay restricciones.
+Ejemplo. Queremos crear player, food y opponents de distintas clases  desde un único punto, y que al crearlos se cree también una física por defecto (tamaño, dimensión, posicionamiento y velocidad) 
+•	Abstract Factory. Se crean clases fábrica para cada tipo a crear, ofreciendo un punto desde el que crear lo que necesitemos.
+•	Factory Method. Digamos que mete la funcionalidad en un método (redefinido en las subclases). Se utiliza para implementar el abstract factory.
+•	Builder. Separa el proceso de cómo se crean las intancias de su representación jerárquica. Digamos que añade control del proceso (orden) a una fabrica abstracta.
+
 
 # Authors: Julian David Rojas Ordoñez
 # 20202099034

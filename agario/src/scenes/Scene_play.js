@@ -6,9 +6,6 @@ class Scene_play extends Phaser.Scene {
     constructor() {
         super({ key: "Scene_play" });
     }
-
-
-
     create() {
         this.scale = 0.6;
 
@@ -19,21 +16,30 @@ class Scene_play extends Phaser.Scene {
         //jugador
         this.player = new Player(this, 200, 200, "ball");
 
+
         // oponente
 
         this.opponent = new Opponent(this, this.sys.game.config.width / 1, this.sys.game.config.height / 1, "ball");
+
 
         //Comida
         this.food = new Food(this, 50, 50, "food");
 
 
+        //this.food2 = new Food(this, 50, 50, "food");
+        // this.food2 = this.physics.add.image(150, 120, "food");
+        // this.food2.immovable = true;
+
+
+
         //Fisicas food
         this.physics.add.collider(this.food, this.player, this.collisionFoodPlayer, null, this);
         this.physics.add.collider(this.food, this.opponent, this.collisionFoodOpponent, null, this);
+        // this.physics.add.collider(this.food2, this.player, this.collisionFoodOpponent, null, this);
 
         //Fisicas opponent
         this.physics.add.collider(this.opponent, this.player, this.collisionOpponentPlayer, null, this);
-        this.physics.add.collider(this.opponent, this.opponent2, this.collisionOpponentOpponent, null, this);
+        this.physics.add.collider(this.opponent, this.food2, this.collisionOpponentOpponent, null, this);
 
         //controls player
         this.cursor = this.input.keyboard.createCursorKeys();
