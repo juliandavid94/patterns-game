@@ -6,3 +6,12 @@
 
 # 3. Decorator: Dentro del ejercicio el patron decorator es el encargado de agregar un elemento extra a alguno de los jugadores, como implementacion, clonamos uno de los enemigos y adicionamos la clase "ImpostorDecorator" la cual se encarga de darle cualidades para comer enemigos mediante la funcion "killPlayer"  
 
+# Authors: Julian David Rojas Ordoñez
+# 20202099034
+
+# Efren Abdenago Lopez Galvis
+# 20202099029
+
+# Edgar Junior Castro Escorcia
+# 20202099024
+
