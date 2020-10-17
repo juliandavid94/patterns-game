@@ -221,26 +221,6 @@ impostor= None
 cellProto = Protoype()
 cellProto.spawn_cells()
 
-def draw_HUD():
-    w,h = font.size("Score: "+str(int(blob.mass*2))+" ")
-    surface.blit(pygame.transform.scale(t_surface,(w,h)),(8,screen_height-30))
-    surface.blit(t_lb_surface,(screen_width-160,15))
-    drawText("Score: " + str(int(blob.mass*2)),(10,screen_height-30))
-    surface.blit(big_font.render("Leaderboard",0,(255,255,255)),(screen_width-157,20))
-    drawText("1. G #1",(screen_width-157,20+25))
-    drawText("2. G #2",(screen_width-157,20+25*2))
-    drawText("3. ISIS",(screen_width-157,20+25*3))
-    drawText("4. ur mom",(screen_width-157,20+25*4))
-    drawText("5. w = pro team",(screen_width-157,20+25*5))
-    drawText("6. jumbo",(screen_width-157,20+25*6))
-    drawText("7. [voz]plz team",(screen_width-157,20+25*7))
-    drawText("8. G #3",(screen_width-157,20+25*8))
-    drawText("9. doge",(screen_width-157,20+25*9))
-    if(blob.mass <= 500):
-        drawText("10. G #4",(screen_width-157,20+25*10))
-    else:
-        drawText("10. Viliami",(screen_width-157,20+25*10),(210,0,0))
-
 while(True):
     clock.tick(70)
     cellProto.setNumber(1)
@@ -280,5 +260,4 @@ while(True):
       impostor.getImpostor().draw(camera)
     for k in enemy_list:
       k.draw(camera);
-    draw_HUD()
     pygame.display.flip()
