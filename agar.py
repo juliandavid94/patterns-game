@@ -25,6 +25,7 @@ except:
 def drawText(message,pos,color=(255,255,255)):
         surface.blit(font.render(message,1,color),pos)
 
+# Calcula distancia entre 2 objetos para saber cuando collisiona
 def getDistance(pos1,pos2):
     px,py = pos1
     p2x,p2y = pos2
@@ -32,6 +33,7 @@ def getDistance(pos1,pos2):
     diffY = math.fabs(py-p2y)
 
     return ((diffX**2)+(diffY**2))**(0.5)
+
 
 class Camera:
     def __init__(self):
@@ -48,6 +50,7 @@ class Camera:
             self.y = (p.startY-(p.y*self.zoom))-p.startY+((screen_height/2))
         elif(type(blobOrPos) == tuple):
             self.x,self.y = blobOrPos
+#
 class ImpostorDecorator:
   def __init__(self, player):
     self.player = player
