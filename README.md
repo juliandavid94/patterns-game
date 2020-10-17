@@ -4,6 +4,6 @@
 
 # 2. Builder: La implementacion del patron Builder se realizo para realizar la instancia de un nuevo jugador dentro del tablero, dado que todos los jugadores tienen unos parametros iniciales, pero pueden tener existir jugadores con comportamientos distontos lo cual a traves de las funciones "buildCamera", "buildPosition" y "buildRandomMovement" extendimos nuevos atributos que contendra el nuevo jugador o "Player", diferentes a los atributos que se usan para el jugador "Enemy", este tipo de patrón se usa cuando es necesario crear varios objetos y hay restricciones en este caso Jugadores y Enemigos.
 
-# 3. Decorator: Dentro del ejercicio el patron decorator es el encargado de agregar un elemento extra a alguno de los jugadores, como implementacion, clonamos uno de los enemigos y adicionamos la clase "ImpostorDecorator" la cual se encarga de darle cualidades para comer enemigos mediante la funcion "killPlayer"  
+# 3. Decorator: Dentro del ejercicio el patron decorator es el encargado de agregar un elemento extra a alguno de los jugadores, como implementacion, clonamos uno de los enemigos y adicionamos la clase "ImpostorDecorator" la cual se encarga de darle cualidades para eliminar enemigos mediante la funcion "killPlayer"  
 
 
